@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
@@ -31,5 +26,41 @@
       }
     ]
   },
-  "projects": {}
+  "projects": {
+    "dashboard": {
+      "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dashboard"]
+    },
+    "members": {
+      "tags": []
+    },
+    "members-e2e": {
+      "tags": [],
+      "implicitDependencies": ["members"]
+    },
+    "orders": {
+      "tags": []
+    },
+    "orders-e2e": {
+      "tags": [],
+      "implicitDependencies": ["orders"]
+    },
+    "physicians": {
+      "tags": []
+    },
+    "physicians-e2e": {
+      "tags": [],
+      "implicitDependencies": ["physicians"]
+    },
+    "prescriptions": {
+      "tags": []
+    },
+    "prescriptions-e2e": {
+      "tags": [],
+      "implicitDependencies": ["prescriptions"]
+    }
+  }
 }
