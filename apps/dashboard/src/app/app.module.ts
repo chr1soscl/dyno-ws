@@ -14,7 +14,8 @@ import { HomeComponent } from './home/home.component';
       [
         {
           path:'home',
-          component:HomeComponent
+          component:HomeComponent,
+          pathMatch:'full'
         },
         {
           path: 'members',

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { MemberHomeComponent } from '../member-home/member-home.component';
+import { MemberSearchComponent } from '../member-search/member-search.component';
 
 import { RemoteEntryComponent } from './entry.component';
 
@@ -11,8 +13,12 @@ import { RemoteEntryComponent } from './entry.component';
     RouterModule.forChild([
       {
         path: '',
-        component: RemoteEntryComponent,
+        component: MemberHomeComponent,
       },
+      {
+        path:'memberSearch',
+        component: MemberSearchComponent
+      }
     ]),
   ],
   providers: [],
