@@ -17,6 +17,7 @@ import { RemoteEntryComponent } from './entry.component';
       },
       {
         path:'memberSearch',
+        pathMatch:'full',
         component: MemberSearchComponent
       }
     ]),
