@@ -23,6 +23,11 @@ import { HomeComponent } from './home/home.component';
             import('members/Module').then((m) => m.RemoteEntryModule),
         },
         {
+          path: 'memberSearch',
+          loadChildren: () =>
+            import('members/Module').then((m) => m.RemoteEntryModule),
+        },
+        {
           path: 'physicians',
           loadChildren: () =>
             import('physicians/Module').then((m) => m.RemoteEntryModule),
