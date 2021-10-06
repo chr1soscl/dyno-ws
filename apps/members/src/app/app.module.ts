@@ -12,6 +12,11 @@ import { MemberHomeComponent } from './member-home/member-home.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
+      {
+        path:'memberSearch',
+        pathMatch:'full',
+        component: MemberSearchComponent
+      }
     ], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],
