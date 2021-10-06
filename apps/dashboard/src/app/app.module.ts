@@ -22,11 +22,12 @@ import { HomeComponent } from './home/home.component';
           loadChildren: () =>
             import('members/Module').then((m) => m.RemoteEntryModule),
         },
-        {
-          path: 'memberSearch',
-          loadChildren: () =>
-            import('members/Module').then((m) => m.RemoteEntryModule),
-        },
+        // uncomment and the console error will disappear but the member search component is not render.
+        // {
+        //   path: 'memberSearch',
+        //   loadChildren: () =>
+        //     import('members/Module').then((m) => m.RemoteEntryModule),
+        // },
         {
           path: 'physicians',
           loadChildren: () =>
